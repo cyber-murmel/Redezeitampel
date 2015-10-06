@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10 -10 260 100" width="26cm" height="10cm">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-15 -10 270 100" width="27cm" height="10cm">
 <style type="text/css">
 circle, path {
 	stroke-width:0.25;
@@ -16,16 +16,17 @@ text {
 	font-size:3px;
 }
 
-.IC text {
-	font-size:5px;
-}
-
-.links text {
+.Links text {
 	text-anchor:end;
 }
 
-.rechts text {
+.Rechts text {
 	text-anchor:start;
+}
+
+.IC text {
+	font-size:5px;
+}
 </style>
 <defs>
 <path id="C" d="M-1 2.5V0H-7.5H-1V-2.5M1 2.5V0H7.5H1V-2.5" />
@@ -137,7 +138,7 @@ text {
 <text x="69" y="60" transform="rotate(90, 69, 60)">470&#8201;Ω</text>
 <text x="89" y="60" transform="rotate(90, 89, 60)">470&#8201;Ω</text>
 <text x="109" y="60" transform="rotate(90, 109, 60)">470&#8201;Ω</text>
-<text x="119" y="60" transform="rotate(90, 119, 60)">470&#8201;Ω</text>
+<text x="129" y="60" transform="rotate(90, 129, 60)">470&#8201;Ω</text>
 <text x="129" y="20" transform="rotate(90, 129, 20)">220&#8201;Ω</text>
 <text x="139" y="20" transform="rotate(90, 139, 20)">220&#8201;Ω</text>
 <text x="149" y="20" transform="rotate(90, 149, 20)">220&#8201;Ω</text>
@@ -149,7 +150,7 @@ text {
 <text x="217.5" y="61">10&#8201;pF</text>
 <text x="217.5" y="71">10&#8201;pF</text>
 
-<g class="links">
+<g class="Links">
 	<text x="3" y="21">NC</text>
 	<text x="3" y="26">12&#8201;V</text>
 	<text x="3" y="31">grün</text>
@@ -160,7 +161,7 @@ text {
 	<text x="3" y="56">NC</text>
 </g>
 
-<g class="rechts">
+<g class="Rechts">
 	<text x="237" y="41">3,3&#8201;V</text>
 	<text x="237" y="46">TEST</text>
 	<text x="237" y="51">RST</text>
