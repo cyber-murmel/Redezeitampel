@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10 -10 260 100" width="26cm" height="10cm">
+<style type="text/css">
+circle, path {
+	stroke-width:0.25;
+	stroke-linejoin:round;
+	stroke-linecap:round;
+	stroke:black;
+	fill:none;	
+}
+
+text {
+	text-anchor:middle;
+	font-family:sans-serif;
+	font-size:3px;
+}
+
+.IC text {
+	font-size:5px;
+}
+
+.links text {
+	text-anchor:end;
+}
+
+.rechts text {
+	text-anchor:start;
+</style>
+<defs>
+<path id="C" d="M-1 2.5V0H-7.5H-1V-2.5M1 2.5V0H7.5H1V-2.5" />
+<path id="R" d="M2 -5V5H-2V-5Z" />
+<path id="diode" d="M2.5 2.5H0L2.5 -2.5H-2.5L0 2.5H-2.5" />
+<path id="conn" d="M2.5 0H0M-1 -1A1 1 0 0 1 -1 1" />
+<circle id="node" cx="0" cy="0" r="0.5" style="fill:black" />
+<path id="arrow" d="M0 0L2 1V-1Z" style="fill:black" />
+<g id="npn">
+	<path d="M-5 5L0 2.5M0 5V-5M0 -2.5L-5 -5M0 0H5" />
+	<use x="-5" y="5" xlink:href="#arrow" transform="rotate(-26.565, -5, 5)" />
+</g>
+</defs>
+<!-- 12V -->
+<path d="M7.5 25H10V10H15H10V0H45V10V0H55V15V0H75V15V0H95V15V0H115V15" />
+<use x="17.5" y="25" xlink:href="#C" />
+<use x="45" y="5" xlink:href="#diode" transform="rotate(180, 45, 5)" />
+<use x="55" y="20" xlink:href="#R" />
+<use x="75" y="20" xlink:href="#R" />
+<use x="95" y="20" xlink:href="#R" />
+<use x="115" y="20" xlink:href="#R" />
+<use x="5" y="20" xlink:href="#conn" />
+<use x="5" y="25" xlink:href="#conn" />
+<use x="5" y="30" xlink:href="#conn" />
+<use x="5" y="35" xlink:href="#conn" />
+<use x="5" y="40" xlink:href="#conn" />
+<use x="5" y="45" xlink:href="#conn" />
+<use x="5" y="50" xlink:href="#conn" />
+<use x="5" y="55" xlink:href="#conn" />
+
+<!-- 78L33 -->
+<path d="M25 80V50H7.5H25V15H15V5H35V15H25" />
+<use x="25" y="25" xlink:href="#node" />
+
+<!-- 3.3V -->
+<path d="M35 10H40V25V10H125V15V10H135V15V10H145V15V10H155V15V10H165V30H175H165V55V10H200V12.5V10H220V15V10H230V40H232.5" />
+<use x="32.5" y="25" xlink:href="#C" />
+<use x="125" y="20" xlink:href="#R" />
+<use x="135" y="20" xlink:href="#R" />
+<use x="145" y="20" xlink:href="#R" />
+<use x="155" y="20" xlink:href="#R" />
+<use x="200" y="20" xlink:href="#C" transform="rotate(90, 200, 20)" />
+<use x="220" y="20" xlink:href="#R" />
+<use x="235" y="40" xlink:href="#conn" transform="rotate(180, 235, 40)" />
+<use x="235" y="45" xlink:href="#conn" transform="rotate(180, 235, 45)" />
+<use x="235" y="50" xlink:href="#conn" transform="rotate(180, 235, 50)" />
+<use x="235" y="55" xlink:href="#conn" transform="rotate(180, 235, 55)" />
+
+<!-- MSP430G2213 -->
+<path d="M175 25H195V65H175Z" />
+<path d="M195 55H197.5" />
+<circle cx="177.5" cy="27.5" r="1" />
+
+<!-- LEDs -->
+<path d="M7.5 30H115V25V65M125 70V65M125 55V25V35H175" />
+<path d="M7.5 35H 95V25V65M105 70V65M105 55V40H135V25V40H175" />
+<path d="M7.5 40H 75V25V65M 85 70V65M 85 55V45H145V25V45H175" />
+<path d="M7.5 45H 55V25V65M 65 70V65M65  55V50H155V25V50H175" />
+<use x="60" y="70" xlink:href="#npn" />
+<use x="65" y="60" xlink:href="#R" />
+<use x="80" y="70" xlink:href="#npn" />
+<use x="85" y="60" xlink:href="#R" />
+<use x="100" y="70" xlink:href="#npn" />
+<use x="105" y="60" xlink:href="#R" />
+<use x="120" y="70" xlink:href="#npn" />
+<use x="125" y="60" xlink:href="#R" />
+<use x="125" y="30" xlink:href="#diode" />
+<use x="135" y="30" xlink:href="#diode" />
+<use x="145" y="30" xlink:href="#diode" />
+<use x="155" y="30" xlink:href="#diode" />
+
+<!-- Masse -->
+<path d="M7.5 50H10V80H55V75V80H75V75V80H95V75V80H115V75V80H165V65V80H200V27.5V30H195M200 80H230V55H232.5" />
+
+<!-- Potentiometer -->
+<path d="M175 55H170L160 65" />
+<use x="165" y="60" xlink:href="#R" />
+<use x="160" y="65" transform="rotate(-45, 160, 65)" xlink:href="#arrow" />
+
+<!-- TEST und RST -->
+<path d="M195 45H232.5" />
+<path d="M195 50H220V25V50H232.5" />
+
+<!-- Oszillator -->
+<path d="M195 35H203.25V30H210V32.5 M207.5 32.5H212.5 M206.5 33.5H213.5V36.5H206.5Z M207.5 37.5H212.5 M195 40H210V37.5" />
+
+<!-- Taster -->
+<path d="M175 60H170V70H210V75M195 60H209M210 65H224M225 55V75V65H230M210 59V55" />
+<use x="210" y="68" transform="rotate(90, 210, 68)" xlink:href="#arrow" />
+<use x="217.5" y="55" xlink:href="#C" />
+<use x="217.5" y="75" xlink:href="#C" />
+<circle cx="210" cy="60" r="1" />
+<circle cx="225" cy="65" r="1" style="fill:black" />
+
+<!-- Beschriftungen -->
+<g class="IC">
+	<text x="117" y="8" style="text-anchor:start">Redezeitampel Revision 4&#8195;2015-10-06</text>
+	<text x="25" y="12">78L33</text>
+	<text x="183" y="45" transform="rotate(90, 183, 45)">MSP430G2231</text>
+</g>
+
+<text x="17.5" y="20">0,33&#8201;µF</text>
+<text x="32.5" y="20">0,10&#8201;µF</text>
+<text x="47.5" y="13">1N4007</text>
+<text x="59" y="20" transform="rotate(90, 59, 20)">10&#8201;kΩ</text>
+<text x="79" y="20" transform="rotate(90, 79, 20)">10&#8201;kΩ</text>
+<text x="99" y="20" transform="rotate(90, 99, 20)">10&#8201;kΩ</text>
+<text x="119" y="20" transform="rotate(90, 119, 20)">10&#8201;kΩ</text>
+<text x="69" y="60" transform="rotate(90, 69, 60)">470&#8201;Ω</text>
+<text x="89" y="60" transform="rotate(90, 89, 60)">470&#8201;Ω</text>
+<text x="109" y="60" transform="rotate(90, 109, 60)">470&#8201;Ω</text>
+<text x="119" y="60" transform="rotate(90, 119, 60)">470&#8201;Ω</text>
+<text x="129" y="20" transform="rotate(90, 129, 20)">220&#8201;Ω</text>
+<text x="139" y="20" transform="rotate(90, 139, 20)">220&#8201;Ω</text>
+<text x="149" y="20" transform="rotate(90, 149, 20)">220&#8201;Ω</text>
+<text x="159" y="20" transform="rotate(90, 159, 20)">220&#8201;Ω</text>
+<text x="205" y="20" transform="rotate(90, 205, 20)">0,1&#8201;µF</text>
+<text x="224" y="20" transform="rotate(90, 224, 20)">47&#8201;kΩ</text>
+<text x="157" y="60" transform="rotate(90, 157, 60)">100&#8201;kΩ</text>
+<text x="215" y="35" transform="rotate(90, 215, 35)">32768&#8201;Hz</text>
+<text x="217.5" y="61">10&#8201;pF</text>
+<text x="217.5" y="71">10&#8201;pF</text>
+
+<g class="links">
+	<text x="3" y="21">NC</text>
+	<text x="3" y="26">12&#8201;V</text>
+	<text x="3" y="31">grün</text>
+	<text x="3" y="36">gelb</text>
+	<text x="3" y="41">rot</text>
+	<text x="3" y="46">Wecker</text>
+	<text x="3" y="51">Masse</text>
+	<text x="3" y="56">NC</text>
+</g>
+
+<g class="rechts">
+	<text x="237" y="41">3,3&#8201;V</text>
+	<text x="237" y="46">TEST</text>
+	<text x="237" y="51">RST</text>
+	<text x="237" y="56">Masse</text>
+</g>
+</svg>
