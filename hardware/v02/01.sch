@@ -16153,7 +16153,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="IC1" library="ic-package" deviceset="DIL20" device="" value="MSP430G2553"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="TC26H"/>
+<part name="XTAL" library="crystal" deviceset="CRYSTAL" device="TC26H"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="0207/10" value="470"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="0207/10" value="220"/>
 <part name="LED4" library="led" deviceset="LED" device="5MM"/>
@@ -16192,6 +16192,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/12" value="0"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="0207/10" value="47k"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16204,7 +16205,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <instance part="IC1" gate="G$1" x="76.2" y="58.42"/>
 <instance part="C1" gate="G$1" x="60.96" y="38.1" rot="MR0"/>
 <instance part="C2" gate="G$1" x="91.44" y="38.1"/>
-<instance part="Q1" gate="G$1" x="88.9" y="66.04"/>
+<instance part="XTAL" gate="G$1" x="88.9" y="66.04"/>
 <instance part="R8" gate="G$1" x="0" y="38.1" rot="R180"/>
 <instance part="R9" gate="G$1" x="-10.16" y="48.26" rot="R90"/>
 <instance part="LED4" gate="G$1" x="-10.16" y="58.42"/>
@@ -16243,6 +16244,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <instance part="GND4" gate="1" x="-25.4" y="76.2"/>
 <instance part="R1" gate="G$1" x="53.34" y="50.8" rot="R90"/>
 <instance part="R10" gate="G$1" x="101.6" y="53.34" rot="R90"/>
+<instance part="C3" gate="G$1" x="96.52" y="55.88" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -16303,17 +16305,18 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="60.96" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="30.48" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="68.58" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="68.58" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="55.88" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="30.48" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="68.58" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="55.88" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="38.1" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="35.56" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="55.88" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <junction x="60.96" y="30.48"/>
 <junction x="91.44" y="30.48"/>
 <junction x="76.2" y="30.48"/>
-<junction x="111.76" y="55.88"/>
+<junction x="106.68" y="55.88"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -16321,6 +16324,9 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="JP3" gate="A" pin="1"/>
 <pinref part="JP4" gate="A" pin="2"/>
 <pinref part="JP5" gate="A" pin="3"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
+<junction x="96.52" y="30.48"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="114.3" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
@@ -16385,9 +16391,12 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="IC1" gate="G$1" pin="16"/>
 <pinref part="JP5" gate="A" pin="2"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91"/>
 <junction x="101.6" y="58.42"/>
 <label x="88.9" y="58.42" size="1.778" layer="95"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
+<junction x="96.52" y="58.42"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -16401,7 +16410,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <net name="N$2" class="0">
 <segment>
 <wire x1="86.36" y1="66.04" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="1"/>
+<pinref part="XTAL" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="19"/>
 </segment>
 </net>
@@ -16410,7 +16419,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <wire x1="91.44" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="66.04" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="2"/>
+<pinref part="XTAL" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="18"/>
 </segment>
 </net>
