@@ -16186,13 +16186,13 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP5" library="pinhead" deviceset="PINHD-1X4" device="/90"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
 <part name="X2" library="con-tycoelectronics" deviceset="RJ45" device="" technology="-6L-B"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/12" value="0"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="0207/10" value="47k"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
+<part name="C4" library="rcl" deviceset="CPOL-EU" device="B45181A" value="200nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16238,13 +16238,13 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <instance part="JP3" gate="A" x="50.8" y="40.64" rot="R180"/>
 <instance part="JP4" gate="A" x="76.2" y="33.02" rot="R270"/>
 <instance part="JP5" gate="A" x="121.92" y="55.88"/>
-<instance part="C6" gate="G$1" x="40.64" y="116.84"/>
 <instance part="X2" gate="G$1" x="-35.56" y="93.98" rot="R180"/>
 <instance part="P+8" gate="1" x="-27.94" y="106.68"/>
 <instance part="GND4" gate="1" x="-25.4" y="76.2"/>
 <instance part="R1" gate="G$1" x="53.34" y="50.8" rot="R90"/>
 <instance part="R10" gate="G$1" x="101.6" y="53.34" rot="R90"/>
 <instance part="C3" gate="G$1" x="96.52" y="55.88" rot="MR0"/>
+<instance part="C4" gate="G$1" x="40.64" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -16266,7 +16266,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <junction x="40.64" y="121.92"/>
 <pinref part="IC2" gate="A1" pin="VO"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="PR" class="0">
@@ -16336,7 +16336,7 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <pinref part="IC2" gate="A1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="-"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
