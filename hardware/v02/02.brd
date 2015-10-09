@@ -681,11 +681,11 @@ design rules under a new name.</description>
 <elements>
 <element name="C1" library="rcl" package="C025-024X044" value="1nF" x="60.96" y="10.16"/>
 <element name="C2" library="rcl" package="C025-024X044" value="1nF" x="66.04" y="10.16"/>
-<element name="XTAL" library="crystal" package="TC26H" value="" x="67.945" y="25.4" rot="R270">
-<attribute name="MF" value="" x="67.945" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="" x="67.945" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="67.945" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="67.945" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="XTAL" library="crystal" package="TC26H" value="" x="65.405" y="25.4" rot="R270">
+<attribute name="MF" value="" x="65.405" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="65.405" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="65.405" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="65.405" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R4" library="rcl" package="0207/12" value="470" x="25.4" y="17.78" rot="R270"/>
 <element name="LED4" library="led" package="LED5MM" value="" x="25.4" y="27.94" rot="R270"/>
@@ -839,16 +839,16 @@ design rules under a new name.</description>
 <wire x1="66.04" y1="2.54" x2="67.31" y2="3.81" width="0.8128" layer="16"/>
 <wire x1="3.81" y1="35.56" x2="2.54" y2="34.29" width="0.8128" layer="16"/>
 <wire x1="2.54" y1="34.29" x2="2.54" y2="3.81" width="0.8128" layer="16"/>
-<wire x1="72.39" y1="29.21" x2="73.66" y2="29.21" width="0.8128" layer="16"/>
+<wire x1="69.85" y1="29.21" x2="73.66" y2="29.21" width="0.8128" layer="16"/>
 <wire x1="73.66" y1="29.21" x2="74.93" y2="27.94" width="0.8128" layer="16"/>
 <wire x1="74.93" y1="27.94" x2="74.93" y2="11.43" width="0.8128" layer="16"/>
-<via x="72.39" y="27.94" extent="1-16" drill="0.8" shape="octagon"/>
-<wire x1="72.39" y1="27.94" x2="72.39" y2="29.21" width="0.8128" layer="16"/>
-<via x="72.39" y="22.86" extent="1-16" drill="0.8" shape="octagon"/>
-<wire x1="72.39" y1="22.86" x2="72.39" y2="27.94" width="0.8128" layer="16"/>
+<via x="69.85" y="27.94" extent="1-16" drill="0.8" shape="octagon"/>
+<wire x1="69.85" y1="27.94" x2="69.85" y2="29.21" width="0.8128" layer="16"/>
+<via x="69.85" y="22.86" extent="1-16" drill="0.8" shape="octagon"/>
+<wire x1="69.85" y1="22.86" x2="69.85" y2="27.94" width="0.8128" layer="16"/>
 <wire x1="12.7" y1="12.7" x2="12.7" y2="2.54" width="0.8128" layer="16"/>
 <contactref element="IC3" pad="14"/>
-<wire x1="62.23" y1="29.21" x2="72.39" y2="29.21" width="0.8128" layer="16"/>
+<wire x1="62.23" y1="29.21" x2="69.85" y2="29.21" width="0.8128" layer="16"/>
 <wire x1="66.04" y1="16.51" x2="66.04" y2="13.97" width="0.8128" layer="16"/>
 <wire x1="66.04" y1="13.97" x2="67.31" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="67.31" y1="12.7" x2="67.31" y2="10.16" width="0.8128" layer="16"/>
@@ -906,12 +906,12 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="XTAL" pad="1"/>
 <contactref element="IC3" pad="13"/>
-<wire x1="62.23" y1="26.67" x2="67.945" y2="26.67" width="0.6096" layer="16"/>
+<wire x1="62.23" y1="26.67" x2="65.405" y2="26.67" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="XTAL" pad="2"/>
 <contactref element="IC3" pad="12"/>
-<wire x1="62.23" y1="24.13" x2="67.945" y2="24.13" width="0.6096" layer="16"/>
+<wire x1="62.23" y1="24.13" x2="65.405" y2="24.13" width="0.6096" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="IC2" pad="3"/>
