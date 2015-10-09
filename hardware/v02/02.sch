@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16624,7 +16624,7 @@ Platinenlayout: MarBle</text>
 <junction x="81.28" y="66.04"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="OUT4" class="0">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="48.26" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
@@ -16635,7 +16635,7 @@ Platinenlayout: MarBle</text>
 <pinref part="X2" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="OUT3" class="0">
 <segment>
 <pinref part="T4" gate="G$1" pin="C"/>
 <wire x1="63.5" y1="55.88" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
@@ -16646,7 +16646,7 @@ Platinenlayout: MarBle</text>
 <pinref part="X2" gate="G$1" pin="6"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="OUT2" class="0">
 <segment>
 <pinref part="T3" gate="G$1" pin="C"/>
 <wire x1="53.34" y1="63.5" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
@@ -16657,7 +16657,7 @@ Platinenlayout: MarBle</text>
 <pinref part="X2" gate="G$1" pin="5"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="OUT1" class="0">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="43.18" y1="71.12" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
