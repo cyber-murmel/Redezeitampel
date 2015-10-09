@@ -16260,8 +16260,8 @@ Platinenlayout: MarBle</text>
 <instance part="C2" gate="G$1" x="144.78" y="38.1"/>
 <instance part="XTAL" gate="G$1" x="142.24" y="66.04"/>
 <instance part="R4" gate="G$1" x="83.82" y="43.18" rot="R180"/>
-<instance part="R8" gate="G$1" x="104.14" y="73.66" rot="R90"/>
-<instance part="LED4" gate="G$1" x="104.14" y="83.82"/>
+<instance part="R8" gate="G$1" x="104.14" y="76.2" rot="R90"/>
+<instance part="LED4" gate="G$1" x="104.14" y="88.9"/>
 <instance part="GND5" gate="1" x="73.66" y="35.56"/>
 <instance part="IC2" gate="A1" x="157.48" y="114.3"/>
 <instance part="P+7" gate="VCC" x="170.18" y="121.92"/>
@@ -16270,19 +16270,19 @@ Platinenlayout: MarBle</text>
 <instance part="P+9" gate="1" x="167.64" y="68.58"/>
 <instance part="T1" gate="G$1" x="76.2" y="43.18" rot="MR0"/>
 <instance part="R1" gate="G$1" x="53.34" y="66.04" rot="R180"/>
-<instance part="R5" gate="G$1" x="81.28" y="73.66" rot="R90"/>
-<instance part="LED1" gate="G$1" x="81.28" y="83.82"/>
+<instance part="R5" gate="G$1" x="81.28" y="76.2" rot="R90"/>
+<instance part="LED1" gate="G$1" x="81.28" y="88.9"/>
 <instance part="GND2" gate="1" x="43.18" y="58.42"/>
 <instance part="P+3" gate="1" x="73.66" y="96.52"/>
 <instance part="T2" gate="G$1" x="45.72" y="66.04" rot="MR0"/>
 <instance part="R2" gate="G$1" x="63.5" y="58.42" rot="R180"/>
-<instance part="R6" gate="G$1" x="88.9" y="73.66" rot="R90"/>
-<instance part="LED2" gate="G$1" x="88.9" y="83.82"/>
+<instance part="R6" gate="G$1" x="88.9" y="76.2" rot="R90"/>
+<instance part="LED2" gate="G$1" x="88.9" y="88.9"/>
 <instance part="GND3" gate="1" x="53.34" y="50.8"/>
 <instance part="T3" gate="G$1" x="55.88" y="58.42" rot="MR0"/>
 <instance part="R3" gate="G$1" x="73.66" y="50.8" rot="R180"/>
-<instance part="R7" gate="G$1" x="96.52" y="73.66" rot="R90"/>
-<instance part="LED3" gate="G$1" x="96.52" y="83.82"/>
+<instance part="R7" gate="G$1" x="96.52" y="76.2" rot="R90"/>
+<instance part="LED3" gate="G$1" x="96.52" y="88.9"/>
 <instance part="GND9" gate="1" x="63.5" y="43.18"/>
 <instance part="T4" gate="G$1" x="66.04" y="50.8" rot="MR0"/>
 <instance part="JP3" gate="A" x="104.14" y="40.64" rot="R180"/>
@@ -16298,10 +16298,10 @@ Platinenlayout: MarBle</text>
 <instance part="R12" gate="G$1" x="53.34" y="88.9" rot="R90"/>
 <instance part="R13" gate="G$1" x="63.5" y="88.9" rot="R90"/>
 <instance part="R14" gate="G$1" x="73.66" y="88.9" rot="R90"/>
-<instance part="P+4" gate="VCC" x="104.14" y="88.9"/>
-<instance part="P+5" gate="VCC" x="96.52" y="88.9"/>
-<instance part="P+6" gate="VCC" x="86.36" y="88.9"/>
-<instance part="P+10" gate="VCC" x="81.28" y="88.9"/>
+<instance part="P+4" gate="VCC" x="104.14" y="96.52"/>
+<instance part="P+5" gate="VCC" x="96.52" y="96.52"/>
+<instance part="P+6" gate="VCC" x="88.9" y="96.52"/>
+<instance part="P+10" gate="VCC" x="81.28" y="96.52"/>
 <instance part="P+11" gate="1" x="63.5" y="96.52"/>
 <instance part="P+12" gate="1" x="53.34" y="96.52"/>
 <instance part="P+13" gate="1" x="43.18" y="96.52"/>
@@ -16336,19 +16336,22 @@ Platinenlayout: MarBle</text>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
+<wire x1="81.28" y1="93.98" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="88.9" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="93.98" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="96.52" y1="93.98" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="104.14" y1="93.98" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PR" class="0">
@@ -16361,7 +16364,7 @@ Platinenlayout: MarBle</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="4"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="68.58" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
 <junction x="96.52" y="60.96"/>
 </segment>
 </net>
@@ -16375,7 +16378,7 @@ Platinenlayout: MarBle</text>
 <pinref part="IC1" gate="G$1" pin="5"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="68.58" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="104.14" y="58.42"/>
 </segment>
 </net>
@@ -16556,6 +16559,7 @@ Platinenlayout: MarBle</text>
 <segment>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="83.82" x2="104.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -16568,6 +16572,7 @@ Platinenlayout: MarBle</text>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="83.82" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -16580,6 +16585,7 @@ Platinenlayout: MarBle</text>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="83.82" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -16592,6 +16598,7 @@ Platinenlayout: MarBle</text>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="83.82" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -16609,7 +16616,7 @@ Platinenlayout: MarBle</text>
 <wire x1="88.9" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="63.5" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="71.12" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <junction x="88.9" y="63.5"/>
 </segment>
 </net>
@@ -16620,7 +16627,7 @@ Platinenlayout: MarBle</text>
 <pinref part="IC1" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="68.58" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="71.12" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
 <junction x="81.28" y="66.04"/>
 </segment>
 </net>
@@ -16633,6 +16640,7 @@ Platinenlayout: MarBle</text>
 <wire x1="73.66" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <junction x="73.66" y="73.66"/>
 <pinref part="X2" gate="G$1" pin="7"/>
+<label x="33.02" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT3" class="0">
@@ -16644,6 +16652,7 @@ Platinenlayout: MarBle</text>
 <wire x1="63.5" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <junction x="63.5" y="76.2"/>
 <pinref part="X2" gate="G$1" pin="6"/>
+<label x="33.02" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT2" class="0">
@@ -16655,6 +16664,7 @@ Platinenlayout: MarBle</text>
 <wire x1="53.34" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <junction x="53.34" y="78.74"/>
 <pinref part="X2" gate="G$1" pin="5"/>
+<label x="33.02" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
@@ -16666,6 +16676,7 @@ Platinenlayout: MarBle</text>
 <wire x1="43.18" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <junction x="43.18" y="81.28"/>
 <pinref part="X2" gate="G$1" pin="4"/>
+<label x="33.02" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
