@@ -9883,7 +9883,7 @@ General purpose 1N400x type rectifier
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="0207/7" value="47k"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="100nF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="025-024X044" value="2.2nF"/>
 <part name="P+10" library="supply1" deviceset="VCC" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA5_L" device=""/>
 <part name="RN1" library="resistor-net" deviceset="RN04" device="" value="4.7k"/>
