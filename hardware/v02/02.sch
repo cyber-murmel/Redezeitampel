@@ -9878,7 +9878,7 @@ General purpose 1N400x type rectifier
 <part name="T4" library="transistor" deviceset="*-NPN-" device="TO92-EBC"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X4" device="/90"/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="X2" library="con-tycoelectronics" deviceset="RJ45" device="" technology="-6L-B"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
